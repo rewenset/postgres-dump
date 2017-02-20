@@ -7,7 +7,7 @@ import dropbox
 PATH_TO_DUMPER 		= r'C:\Program Files\PostgreSQL\9.5\bin\pg_dump.exe'
 PATH_TO_DUMP_FILE 	= r'C:\temp_dump_file.txt'
 DATABASE_NAME 		= 'postgres'
-PASSWORD 		= 'admin'
+PASSWORD 		= '************'
 
 # settings to upload dump file to Dropbox
 ACCESS_TOKEN 		= '************'
