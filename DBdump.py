@@ -7,11 +7,11 @@ import dropbox
 PATH_TO_DUMPER 		= r'C:\Program Files\PostgreSQL\9.5\bin\pg_dump.exe'
 PATH_TO_DUMP_FILE 	= r'C:\temp_dump_file.txt'
 DATABASE_NAME 		= 'postgres'
-PASSWORD 			= 'admin'
+PASSWORD 		= '************'
 
 # settings to upload dump file to Dropbox
 ACCESS_TOKEN 		= '************'
-TIME 				= datetime.now().strftime("%d-%m-%Y_%H%M")
+TIME 			= datetime.now().strftime("%d-%m-%Y_%H%M")
 DROPBOX_FOLDER 		= '/postgres-dumps/'
 DROPBOX_FILE_NAME 	= 'dump' + TIME + ".txt"
 DROPBOX_FULL 		= DROPBOX_FOLDER + DROPBOX_FILE_NAME
