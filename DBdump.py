@@ -6,14 +6,14 @@ import dropbox
 
 
 # Dump file settings
-PATH_TO_DUMPER 		= r'C:\Program Files\PostgreSQL\9.5\bin\pg_dump.exe'
-TIME 				= datetime.now().strftime("%d-%m-%Y_%H%M%S")
-DUMP_FILE_NAME 		= 'dump' + TIME + '.txt'
-PATH_TO_DUMP_FILE 	= os.path.join(os.getcwd(), DUMP_FILE_NAME)
+PATH_TO_DUMPER 	= r'C:\Program Files\PostgreSQL\9.5\bin\pg_dump.exe'
+TIME 		= datetime.now().strftime("%d-%m-%Y_%H%M%S")
+DUMP_FILE_NAME 	= 'dump' + TIME + '.txt'
+PATH_TO_DUMP_FILE = os.path.join(os.getcwd(), DUMP_FILE_NAME)
 
 # Dropbox settings
-ACCESS_TOKEN 		= '***'  # replace with your access token from Dropbox
-DROPBOX_PATH 		= '/postgres-dumps/' + DUMP_FILE_NAME
+ACCESS_TOKEN 	= '***'  # replace with your access token from Dropbox
+DROPBOX_PATH 	= '/postgres-dumps/' + DUMP_FILE_NAME
 
 def main():
 	parser = init_args_parser()
