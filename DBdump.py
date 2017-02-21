@@ -26,4 +26,4 @@ client = dropbox.client.DropboxClient(ACCESS_TOKEN)
 with open(PATH_TO_DUMP_FILE, 'rb') as f:
 	response = client.put_file(DROPBOX_FULL, f)
 	
-os.remove(PATH_TO_DUMP_FILE)	# clean-up
+ os.remove(PATH_TO_DUMP_FILE)	# clean-up
